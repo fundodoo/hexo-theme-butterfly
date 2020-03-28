@@ -28,7 +28,7 @@ if theme.douban
   !=partial('includes/header/header', {}, {cache:theme.fragment_cache})
   if is_home()
     #site-info
-      h1#site_title=site_title
+      //- h1#site_title=site_title
       #site_subtitle
         span#subtitle
       if(theme.social)
@@ -39,5 +39,5 @@ if theme.douban
   else if is_post()
     include ./post-info.pug 
   else
-    #page_site-info
-      h1#site_title=site_title
+    //- #page_site-info
+      //- h1#site_title=site_title
